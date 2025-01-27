@@ -1,0 +1,114 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Fondo negro intenso */
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif; /* Fuente moderna y minimalista */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+#Calculator {
+    background: linear-gradient(145deg, #1a1a1a, #000000); /* Fondo con efecto cyberpunk */
+    border-radius: 20px;
+    box-shadow: 0 0 20px #00a7e1, 0 0 50px #6a0dad; /* Efecto de neón */
+    padding: 20px;
+    width: 320px;
+    text-align: center;
+}
+
+
+#display {
+    width: auto;
+    height: 50px;
+    background: #111111; /* Fondo oscuro para contraste */
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    text-align: right;
+    padding: 10px;
+    color: #00a7e1; /* Azul eléctrico */
+    box-shadow: inset 0 0 10px #6a0dad; /* Efecto de iluminación interna */
+}
+
+
+#keys {
+    margin-top: 20px;
+}
+
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0; /* Espacio entre filas */
+}
+
+
+button {
+    flex: 1; /* Hace que los botones ocupen el mismo espacio */
+    max-width: 70px; /* Limitar el ancho máximo */
+    height: 50px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #09b1e4; /* Texto blanco */
+}
+
+
+/* Colores vibrantes según el tipo de botón */
+button.operator {
+    background-color: #6a0dad; /* Morado oscuro */
+    box-shadow: 0 0 15px #6a0dad;
+}
+
+
+button.equal {
+    background-color: #ff007f; /* Rosa fucsia */
+    box-shadow: 0 0 20px #ff007f;
+}
+
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px #00a7e1, 0 0 35px #ff007f;
+}
+
+
+button:active {
+    transform: translateY(1px);
+}
+
+
+#toggle {
+    background-color: #00a7e1;
+    margin-top: 20px;
+    width: 100%;
+    box-shadow: 0 0 15px #00a7e1;
+}
+
+
+#toggle:hover {
+    background-color: #ff007f;
+    box-shadow: 0 0 25px #ff007f;
+}
+
+
+/* Adaptación a pantallas pequeñas */
+@media (max-width: 400px) {
+    button {
+        width: 60px;
+        height: 45px;
+        font-size: 1rem;
+    }
+    #display {
+        font-size: 1.2rem;
+    }
+}
